@@ -108,6 +108,17 @@
 
   <h3>Anchors: accessible links</h3>
   <pre><code>&lt;a href="/about" title="About this site"&gt;About&lt;/a&gt;
-      
+      &lt;a href="https://external.com" rel="noopener noreferrer" target="_blank"&gt;External&lt;/a&gt;
+
+&lt;a href="#section-id" aria-label="Jump to section"&gt;Go to section&lt;/a&gt;
+</code></pre>
+
+  <h2>5 — Forms & inputs</h2>
+  <p>The modern HTML form includes semantic input types, validation attributes, and accessibility attributes.</p>
+
+  <h3>Form elements cheat sheet</h3>
+  <pre><code>&lt;form action="/submit" method="post" autocomplete="on" novalidate&gt;
+  &lt;label for="name"&gt;Full name&lt;/label&gt;
+  &lt;input id="name" name="name" type="text" required minlength="2" placeholder="Jane Doe"&gt;
     </body>
   </html>
