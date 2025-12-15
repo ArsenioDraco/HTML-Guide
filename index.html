@@ -169,7 +169,20 @@
 </code></pre>
 
   <p>Use <code>alt</code> text always. Use <code>loading="lazy"</code> for below-the-fold images.</p>
+<h3>Responsive & art-direction: &lt;picture&gt;</h3>
+  <pre><code>&lt;picture&gt;
+  &lt;source media="(min-width:1200px)" srcset="/images/hero-desktop.jpg"&gt;
+  &lt;source media="(min-width:600px)" srcset="/images/hero-tablet.jpg"&gt;
+  &lt;img src="/images/hero-mobile.jpg" alt="Hero image with people" loading="lazy"&gt;
+&lt;/picture&gt;
+</code></pre>
 
+  <h3>Video & audio</h3>
+  <pre><code>&lt;video controls width="640" preload="metadata" poster="/thumb.jpg"&gt;
+  &lt;source src="/video.mp4" type="video/mp4"&gt;
+  &lt;source src="/video.webm" type="video/webm"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
 
 
 
