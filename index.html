@@ -197,7 +197,17 @@
   &lt;path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5z"/&gt;
 &lt;/svg&gt;
 </code></pre>
+<h3>Canvas (bitmap drawing via JS)</h3>
+  <pre><code>&lt;canvas id="c" width="600" height="400"&gt;&lt;/canvas&gt;
+&lt;script&gt;
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+ctx.fillStyle = '#2b6cb0';
+ctx.fillRect(10,10,200,100);
+&lt;/script&gt;
+</code></pre>
 
+  <p>Use SVG for vector icons and illustrations — scalable and accessible. Use canvas for pixel/painterly effects and games.</p>
 
 
 
