@@ -183,7 +183,20 @@
   &lt;source src="/video.webm" type="video/webm"&gt;
   Your browser does not support the video tag.
 &lt;/video&gt;
+&lt;audio controls&gt;
+  &lt;source src="/audio.mp3" type="audio/mpeg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;
+</code></pre>
 
+  <p>Always provide multiple sources for wide compatibility. Include captions/subtitles for accessibility (<code>&lt;track kind="captions"&gt;</code>).</p>
+
+  <h2>7 — Graphics: &lt;canvas&gt; &amp; &lt;svg&gt;</h2>
+  <h3>SVG inline (recommended for icons & illustrations)</h3>
+  <pre><code>&lt;svg viewBox="0 0 24 24" role="img" aria-label="Search icon" width="24" height="24"&gt;
+  &lt;path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5z"/&gt;
+&lt;/svg&gt;
+</code></pre>
 
 
 
