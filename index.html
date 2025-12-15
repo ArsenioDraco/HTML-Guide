@@ -145,7 +145,19 @@
     <li><code>url</code>, <code>number</code>, <code>range</code>, <code>date</code>, <code>time</code>, <code>datetime-local</code></li>
     <li><code>search</code>, <code>color</code>, <code>file</code>, <code>checkbox</code>, <code>radio</code></li>
   </ul>
-      
+      <h3>Form accessibility tips</h3>
+  <ul>
+    <li>Always pair <code>&lt;label for&gt;</code> with inputs or wrap the input inside the label.</li>
+    <li>Use <code>aria-describedby</code> to link helpful hints or error messages.</li>
+    <li>Use semantic hints like <code>autocomplete</code>, <code>inputmode</code>, and proper <code>type</code> to aid mobile keyboards.</li>
+  </ul>
+
+  <pre><code>&lt;label for="amount"&gt;Amount&lt;/label&gt;
+&lt;input id="amount" name="amount" inputmode="decimal" pattern="^\d+(\.\d{1,2})?$" placeholder="e.g. 19.99"&gt;
+
+&lt;span id="amount-help"&gt;Round to two decimals&lt;/span&gt;
+&lt;input aria-describedby="amount-help" aria-invalid="false"&gt;
+</code></pre>
 
 
 
