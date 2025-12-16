@@ -281,7 +281,9 @@ ctx.fillRect(10,10,200,100);
     <li><code>crossorigin</code> — used for fonts & CORS requests.</li>
     <li><code>integrity</code> — Subresource Integrity for external scripts/styles.</li>
   </ul>
-
+<pre><code>&lt;link rel="preload" href="/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin&gt;
+&lt;script src="https://cdn.example.com/lib.js" integrity="sha384-..." crossorigin="anonymous" defer&gt;&lt;/script&gt;
+</code></pre>
     
     </body>
   </html>
