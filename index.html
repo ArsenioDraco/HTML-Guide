@@ -237,7 +237,30 @@ ctx.fillRect(10,10,200,100);
 
   <h2>10 — Accessibility & ARIA</h2>
   <p>Accessibility isn't optional. Use semantic HTML first, then ARIA only when necessary.</p>
+<h3>Basic rules</h3>
+  <ul>
+    <li>Use headings to create a logical document outline.</li>
+    <li>Provide <code>alt</code> for images; empty alt (<code>alt=""</code>) for decorative images.</li>
+    <li>Use labels for form inputs.</li>
+    <li>Keep focus order meaningful and predictable.</li>
+    <li>Ensure contrast ratio is adequate (WCAG AA/AAA guidelines).</li>
+  </ul>
 
+  <h3>Common ARIA patterns</h3>
+  <pre><code>&lt;button aria-pressed="false" aria-label="Toggle favorite"&gt;♡&lt;/button&gt;
+
+&lt;nav role="navigation" aria-label="secondary"&gt;...
+
+&lt;div role="alert" aria-live="assertive"&gt;Error message&lt;/div&gt;
+</code></pre>
+
+  <h2>11 — Progressive enhancement & best practices</h2>
+  <ul>
+    <li>Prefer semantic HTML; add JS progressively.</li>
+    <li>Defer non-critical scripts (<code>defer</code> or <code>async</code> where appropriate).</li>
+    <li>Serve responsive images, compress media, use <code>preload</code>/<code>prefetch</code> for critical assets.</li>
+    <li>Use feature detection (e.g., <code>if ('serviceWorker' in navigator)</code>).</li>
+  </ul>
 
 
 
