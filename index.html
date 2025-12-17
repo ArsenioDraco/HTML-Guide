@@ -313,7 +313,19 @@ ctx.fillRect(10,10,200,100);
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-    
+    <h3>Hero section (semantic + responsive image)</h3>
+  <pre><code>&lt;header class="hero" role="banner"&gt;
+  &lt;picture&gt;
+    &lt;source media="(min-width:1000px)" srcset="/hero-desktop.jpg"&gt;
+    &lt;img src="/hero-mobile.jpg" alt="People celebrating" loading="lazy"&gt;
+  &lt;/picture&gt;
+  &lt;div class="hero-content"&gt;
+    &lt;h1&gt;Welcome to Our Site&lt;/h1&gt;
+    &lt;p&gt;Short, punchy subheading that explains value.&lt;/p&gt;
+    &lt;a class="btn" href="/signup"&gt;Get started&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</code></pre>
     
     
     
