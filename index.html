@@ -333,7 +333,19 @@ ctx.fillRect(10,10,200,100);
     <li>Use <code>&lt;dialog&gt;</code> for native modals (with JS polyfill for older browsers).</li>
     <li>Progressive Web App: include <code>manifest</code> and service worker registration.</li>
   </ul>
-    
+    <h3>Example: Service worker registration (HTML-friendly snippet)</h3>
+  <pre><code>&lt;script&gt;
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () =&gt; {
+    navigator.serviceWorker.register('/sw.js').then(reg =&gt; {
+      console.log('SW registered', reg);
+    }).catch(err =&gt; {
+      console.warn('SW registration failed', err);
+    });
+  });
+}
+&lt;/script&gt;
+</code></pre>
     
     
     
